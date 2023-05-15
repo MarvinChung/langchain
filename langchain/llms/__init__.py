@@ -30,6 +30,7 @@ from langchain.llms.self_hosted import SelfHostedPipeline
 from langchain.llms.self_hosted_hugging_face import SelfHostedHuggingFaceLLM
 from langchain.llms.stochasticai import StochasticAI
 from langchain.llms.writer import Writer
+from langchain.llms.mtkresearch import MTKResearch
 
 __all__ = [
     "Anthropic",
@@ -63,6 +64,7 @@ __all__ = [
     "Writer",
     "RWKV",
     "PredictionGuard",
+    "MTKResearch",
 ]
 
 type_to_cls_dict: Dict[str, Type[BaseLLM]] = {
@@ -93,4 +95,5 @@ type_to_cls_dict: Dict[str, Type[BaseLLM]] = {
     "stochasticai": StochasticAI,
     "writer": Writer,
     "rwkv": RWKV,
+    "mtkresearch": MTKResearch
 }

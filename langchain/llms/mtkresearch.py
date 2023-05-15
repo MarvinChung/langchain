@@ -87,7 +87,7 @@ class MTKResearch(LLM):
         _model_kwargs = self.model_kwargs or {}
         return {
             **{"model_type": self.model_id, "model_object": self.task},
-            **{"model_kwargs": self.model_kwargs},
+            **{"parameters": self.model_kwargs},
         }
 
     @property
